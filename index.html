@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para mi amor</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #ffd1dc;
+        text-align: center;
+        padding: 50px;
+      }
+      h1 {
+        color: #880e4f;
+      }
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      .photo {
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+      }
+      p {
+        color: #4a148c;
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+      button {
+        background-color: #ab47bc;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 30px;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #8e24aa;
+      }
+      #mensajeSecreto {
+        display: none;
+        margin-top: 20px;
+        font-weight: bold;
+        color: #d81b60;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>¡Eres mi persona favorita! ❤️</h1>
+    <div class="gallery">
+      <img src="IMG_0537.jpg" alt="Momentos juntos" class="photo" />
+      <img src="IMG_0530.jpg" alt="Más recuerdos" class="photo" />
+    </div>
+    <button onclick="mostrarMensaje()">Presiona aquí para una sorpresa</button>
+    <p id="mensajeSecreto">
+      Te amo muchísimo, mi cuhurrumin, eres lo mejor que me ha pasado en la vida
+    </p>
+    <script>
+      function mostrarMensaje() {
+        document.getElementById("mensajeSecreto").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
